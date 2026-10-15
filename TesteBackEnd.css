@@ -1,0 +1,14 @@
+h1{
+   background-color: aqua;
+    font-style: italic;
+    text-align: center;
+}
+.container-centro {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (se o container tiver altura) */
+}
+
+h2{
+    text-align: center;
+}

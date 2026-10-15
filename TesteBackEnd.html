@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Back-End</title>
+    <link rel="stylesheet" href="TesteBackEnd.css">
+</head>
+<body>
+   
+    <h1><u>Testes Back End</u></h1>
+    <h2>Plano de Teste (Test Plan):</h2>
+    <p>É o roteiro estratégico do processo de validação. Ele funciona como o documento macro que define as diretrizes do projeto de QA.</p>
+    <ul>
+        <li>O que contém: O escopo do que será testado (e o que não será), o cronograma, as ferramentas, a equipe responsável, os critérios de parada/aceitação e a análise de riscos.</li>
+        <li>Objetivo: Alinhar as expectativas das partes interessadas e preparar o ambiente e recursos necessários antes do início das execuções.</li>
+    </ul>
+     <div class="container-centro">
+      <img src="imagem de teste 01.png" alt="Minha Imagem">
+     </div>
+             <hr>
+      <h2> Casos de Teste (Test Cases)</h2>
+      <p>É a especificação técnica detalhada de cenários que devem ser executados no sistema.</p>
+      <ul>
+        <li>O que contém: Identificador único (ID), título descritivo, pré-condições, passos lógicos de execução e o resultado esperado. Durante o teste, registra-se também o resultado real e o status (passou/falhou).</li>
+        <li>Objetivo: Fornecer um guia passo a passo estruturado e repetível para que qualquer testador consiga validar uma funcionalidade sem ambiguidades.</li>
+      </ul>
+
+      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Testes de Software</title>
+    <style>
+        /* Estilos básicos para organizar o site */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .exemplo-box {
+            background-color: #eef2f7;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guia de Testes de Software (Back-End)</h1>
+        <p>Conceitos básicos e boas práticas para iniciantes em QA</p>
+    </header>
+
+    <nav>
+        <a href="#documentos">A) Documentos</a>
+        <a href="#elaboracao">B) Casos de Teste</a>
+        <a href="#execucao">C) Execução</a>
+        <a href="#monitoramento">D) Monitoramento</a>
+        <a href="#avaliacao">E) Resultados</a>
+        <a href="#automacao">F) Automação</a>
+    </nav>
+
+    <main>
+
+        <!-- SEÇÃO A -->
+        <section id="documentos">
+            <h2>A) Documentos de Testes</h2>
+            <p>A documentação garante que todo o processo de qualidade seja rastreável e transparente. Os quatro principais artefatos são:</p>
+            
+            <h3>1. Plano de Teste (Test Plan)</h3>
+            <p>O roteiro estratégico do projeto de QA. Define o escopo (o que testar), o cronograma, as ferramentas, as responsabilidades e a análise de riscos.</p>
+
+            <h3>2. Casos de Teste (Test Cases)</h3>
+            <p>Especificações detalhadas de condições, passos e resultados esperados para validar uma funcionalidade específica.</p>
+
+            <h3>3. Relatório de Incidentes de Testes (Bug Report)</h3>
+            <p>O registro formal de qualquer falha ou comportamento inesperado encontrado no sistema durante as validações.</p>
+
+            <h3>4. Relatório de Resumo de Teste (Test Summary Report)</h3>
+            <p>Documento final que resume os resultados das execuções, trazendo dados sobre a qualidade do software antes de ir para produção.</p>
+        </section>
+
+        <!-- SEÇÃO B -->
+        <section id="elaboracao">
+            <h2>B) Elaboração do Caso de Teste</h2>
+            <p><strong>Conceito:</strong> Um bom Caso de Teste deve ser claro, objetivo e facilmente replicável por qualquer pessoa da equipe. Ele descreve uma ação do usuário e a resposta esperada do sistema.</p>
+            
+            <div class="exemplo-box">
+                <h3>Exemplo Prático: Login no Sistema</h3>
+                <p><strong>ID:</strong> CT001</p>
+                <p><strong>Título:</strong> Validar login com credenciais corretas.</p>
+                <p><strong>Pré-condições:</strong> Usuário já cadastrado no banco de dados.</p>
+                <p><strong>Passo a Passo:</strong></p>
+                <ul>
+                    <li>1. Acessar a página de login.</li>
+                    <li>2. Inserir o e-mail cadastrado.</li>
+                    <li>3. Inserir a senha correta.</li>
+                    <li>4. Clicar no botão "Entrar".</li>
+                </ul>
+                <p><strong>Resultado Esperado:</strong> O sistema autentica o usuário e o redireciona para a tela inicial.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO C -->
+        <section id="execucao">
+            <h2>C) Execução do Programa</h2>
+            <p>Esta é a fase onde os testes saem do papel. O analista de QA segue as instruções dos Casos de Teste na aplicação real para verificar se o comportamento do software condiz com o esperado. Qualquer desvio gera a criação de um bug.</p>
+        </section>
+
+        <!-- SEÇÃO D -->
+        <section id="monitoramento">
+            <h2>D) Monitoramento e Controle</h2>
+            <p>Processo contínuo focado em acompanhar o progresso dos testes. O objetivo é comparar o ritmo real das validações com o planejamento inicial do cronograma, permitindo ações rápidas caso ocorram atrasos ou imprevistos.</p>
+        </section>
+
+        <!-- SEÇÃO E -->
+        <section id="avaliacao">
+            <h2>E) Avaliação de Resultados</h2>
+            <p>Nesta etapa, a equipe analisa se os critérios de aceitação foram atingidos. Verifica-se o volume de defeitos abertos versus fechados e a cobertura dos testes para decidir se o software está seguro e maduro para ser liberado aos usuários.</p>
+        </section>
+
+        <!-- SEÇÃO F -->
+        <section id="automacao">
+            <h2>F) Comunicação com a Equipe de Automação de Testes</h2>
+            <p>O alinhamento com os desenvolvedores de automação é essencial. A equipe de testes manuais repassa quais cenários são críticos, repetitivos e estão estáveis na aplicação — pois estes são os candidatos ideais para serem transformados em scripts de testes automatizados.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Meu Primeiro Site de Testes de Software. Criado para estudos.</p>
+    </footer>
+
+</body>
+</html>
+
+
+    
+    
+</body>
+</html>
